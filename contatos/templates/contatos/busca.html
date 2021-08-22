@@ -1,0 +1,11 @@
+{% extends 'contatos/index.html' %}
+<br><br>
+<form method="get" action="{% url 'busca' %}">
+
+    <div class="form-group mx-sm-3 mb-2">
+
+        <input type="search" class="form-control" id="search-input" name="termo" placeholder="Buscar"
+            value="{{ request.GET.termo }}">
+    </div>
+    <button type="submit" class="btn btn-primary mb-2">Buscar</button>
+</form>
